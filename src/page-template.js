@@ -1,4 +1,7 @@
-const generatePage = (name, github) => {
+module.exports = templateData => {
+    console.log(templateData);
+    //destructure projects and about data from templateData based on their property key names
+    const { projects, about } = templateData;
     return `
     <!DOCTYPE html>
     <html lang="en">
